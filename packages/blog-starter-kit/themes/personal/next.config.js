@@ -85,10 +85,10 @@ const config = {
 			},
 			{
 				source: "/blog",
-				destination: "https://jiwonme.vercel.app/blog",
+				destination: "https://hash.jiwon.me/blog",
 			},
 		 {
-				source: "/blog/:path*", destination: "https://jiwonme.vercel.app/blog/:path*",
+				source: "/blog/:path*", destination: "https://hash.jiwon.me/blog/:path*",
 			},
 		];
 	},
