@@ -83,6 +83,13 @@ const config = {
 				source: '/api/analytics',
 				destination: `${HASHNODE_ADVANCED_ANALYTICS_URL}/api/analytics`,
 			},
+			{
+				source: "/blog",
+				destination: "https://jiwonme.vercel.app/blog",
+			},
+		 {
+				source: "/blog/:path*", destination: "https://jiwonme.vercel.app/blog/:path*",
+			},
 		];
 	},
 	async redirects() {
@@ -91,3 +98,4 @@ const config = {
 };
 
 module.exports = config;
+
