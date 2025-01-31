@@ -1,7 +1,14 @@
 import { ThemeProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import { useEffect } from 'react';
+import { Noto_Sans_KR } from 'next/font/google';
 import '../styles/index.css';
+
+const notoSansKR = Noto_Sans_KR({
+	subsets: ['latin', 'latin-ext'],
+	weight: ['400', '700'],
+	variable: '--font-noto-sans-kr',
+});
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
@@ -14,7 +21,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 	}, []);
 	return (
 		<ThemeProvider attribute="class">
-			<Component {...pageProps} />
+			<Component {...pageProps} className={notoSansKR.variable} />
 		</ThemeProvider>
 	);
 }
