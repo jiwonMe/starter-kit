@@ -81,7 +81,8 @@ export const PersonalHeader = () => {
 									})}
 								/>
 							)} */}
-							{publication.title.toUpperCase()}
+							{/* ({publication.title.toUpperCase()}) */}
+							박지원<br/>블로그
 						</Link>
 					</h1>
 					<ToggleTheme className="md:hidden" />
