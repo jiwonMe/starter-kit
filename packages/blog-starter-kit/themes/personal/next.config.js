@@ -83,17 +83,6 @@ const config = {
 				source: '/api/analytics',
 				destination: `${HASHNODE_ADVANCED_ANALYTICS_URL}/api/analytics`,
 			},
-			{
-				source: "/:path",
-				destination: "https://hash.jiwon.me/blog/:path",
-			},
-		// 	{
-		// 		source: "/blog",
-		// 		destination: "https://hash.jiwon.me/blog",
-		// 	},
-		//  {
-		// 		source: "/blog/:path*", destination: "https://hash.jiwon.me/blog/:path*",
-		// 	},
 		];
 	},
 	async redirects() {
